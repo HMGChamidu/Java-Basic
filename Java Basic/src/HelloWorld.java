@@ -1,15 +1,19 @@
 import  java.util.Scanner;
 
 public class HelloWorld {
-    public static void announceDeveloperTeaTime(){
-        System.out.println("Waiting for developer tea time...");
-        System.out.println("Type in a random word and press Enter to start developer tea time");
-        Scanner input=new Scanner(System.in);
-        input.next();
-        System.out.println("It's a developer tea time! ");
+    public static void calculateTotalMealPrice(double listedMealPrice,
+                                               double tipRate,
+                                               double taxRate){
+        double tip = tipRate * listedMealPrice;
+        double tax = taxRate * listedMealPrice;
+        double result = listedMealPrice + tip + tax;
+        System.out.println("Your total meal price is "+result);
+
     }
     public static void main(String[] args) {
-
+          calculateTotalMealPrice(15,.2,.08);
+        calculateTotalMealPrice(25,.2,.08);
+        calculateTotalMealPrice(35,.2,.08);
     }
 
 
