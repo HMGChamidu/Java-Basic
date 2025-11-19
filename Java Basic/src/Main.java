@@ -1,10 +1,13 @@
 class Main{
-    public void greeting(){
-        System.out.println("Welcome");
-    }
+  int i = 0;
     public void display(){
-        System.out.println("Hello");
-        greeting();
+        System.out.println("Hello "+i );
+        i++;
+        if(i<15){
+            display();
+
+        }
+
     }
 
     public static void main(String[] args) {
