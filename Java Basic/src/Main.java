@@ -2,9 +2,11 @@
 
 public class  Main {
 
+    static int x=3; //Class
+
     public static void main(String[] args) {
              int x =1; //Local
-
+        System.out.println(x);
 
         doSomething();
     }
