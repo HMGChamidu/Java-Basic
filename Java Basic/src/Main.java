@@ -1,18 +1,15 @@
-
-
-public class  Main {
-
-    static int x=3; //Class
-
-    public static void main(String[] args) {
-             int x =1; //Local
-        System.out.println(x);
-
-        doSomething();
+class Main{
+    public void greeting(){
+        System.out.println("Welcome");
+    }
+    public void display(){
+        System.out.println("Hello");
+        greeting();
     }
 
-    static void doSomething(){
-        int x =2; //LOCAL
-        System.out.println(x);
+    public static void main(String[] args) {
+
+        Main obj =new Main();
+        obj.display();
     }
 }
