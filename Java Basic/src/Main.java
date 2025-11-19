@@ -1,18 +1,19 @@
 class Main{
   int i = 0;
-    public void display(){
-        System.out.println("Hello "+i );
-        i++;
-        if(i<13){
-            display();
+    public int factorial(int n){
+        if(n==0){
+            return 1;
+        }else{
+            return n*factorial(n-1);
 
         }
 
     }
 
     public static void main(String[] args) {
-
+        int y = 6;
         Main obj =new Main();
-        obj.display();
+      int  result = obj.factorial(y);
+        System.out.println(result);
     }
 }
