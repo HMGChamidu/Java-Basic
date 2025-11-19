@@ -3,7 +3,7 @@ class Main{
     public void display(){
         System.out.println("Hello "+i );
         i++;
-        if(i<15){
+        if(i<13){
             display();
 
         }
